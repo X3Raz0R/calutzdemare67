@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antonio Medeleanu, software engineer</title>
+<meta name="description" content="Economic Informatics student at ASE Bucharest. Builds data pipelines and full-stack apps. Winner of SmartHack 2026 and the Veridion Challenge at VibeHack 2026.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0c1216">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Antonio Medeleanu, software engineer">
+<meta property="og:description" content="Data pipelines in Python and SQL, full-stack apps in React. Winner of SmartHack 2026 and the Veridion Challenge at VibeHack 2026.">
+<meta property="og:image" content="assets/img/trophy.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1216'/%3E%3Cpath d='M19 47 32 15l13 32h-7.4l-2.3-6.2H28.7L26.4 47Zm11.8-12h2.4L32 26.6Z' fill='%23f2b54a'/%3E%3C/svg%3E">
+<script>
+  // set the theme before first paint, and mark that scripts run (reveal animations depend on it)
+  document.documentElement.classList.add('js');
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i>Antonio Medeleanu</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <button class="theme" type="button" aria-label="Switch between dark and light theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn solid small" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ hero ============ -->
+  <div class="hero" id="top">
+    <canvas id="grid" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div>
+        <p class="status mono fade" style="--d:.1s"><span class="pulse"></span>open to software engineering internships</p>
+        <h1 data-split aria-label="Antonio Medeleanu"><span class="line">Antonio</span><span class="line">Medeleanu</span></h1>
+        <p class="lead fade" style="--d:.75s">I build data pipelines in Python and SQL, and full-stack apps people actually use.</p>
+        <p class="fade" style="--d:.9s">Economic Informatics student at ASE Bucharest. Two hackathon wins in 2026.</p>
+        <div class="cta fade" style="--d:1.05s">
+          <a class="btn solid" href="#work">See my work
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+          </a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="shot fade" style="--d:.5s" data-tilt>
+        <div class="float a mono"><b>SmartHack 2026</b><span>Winner · R Systems</span></div>
+        <div class="float b mono"><b>VibeHack 2026</b><span>1st place · Veridion</span></div>
+        <div class="photo"><img src="assets/img/trophy.jpg" width="480" height="853" alt="Lit acrylic trophy engraved 'Veridion Challenge' on a wooden table"></div>
+      </figure>
+    </div>
+    <a class="scroll-cue mono" href="#stats" aria-label="Scroll to the next section">scroll<i></i></a>
+  </div>
+
+  <!-- ============ stack marquee ============ -->
+  <div class="marquee" aria-label="Technologies: Python, SQL, JavaScript, TypeScript, C#, Java, C++, React, Node.js, Supabase, PostgreSQL, FastAPI, ASP.NET Core, Docker, Linux, Luau">
+    <div class="track" aria-hidden="true">
+      <span>Python</span><span>SQL</span><span>JavaScript</span><span>TypeScript</span><span>C#</span><span>Java</span><span>C++</span><span>React</span><span>Node.js</span><span>Supabase</span><span>PostgreSQL</span><span>FastAPI</span><span>ASP.NET Core</span><span>Docker</span><span>Linux</span><span>Luau</span>
+      <span>Python</span><span>SQL</span><span>JavaScript</span><span>TypeScript</span><span>C#</span><span>Java</span><span>C++</span><span>React</span><span>Node.js</span><span>Supabase</span><span>PostgreSQL</span><span>FastAPI</span><span>ASP.NET Core</span><span>Docker</span><span>Linux</span><span>Luau</span>
+    </div>
+  </div>
+
+  <!-- ============ numbers ============ -->
+  <section class="stats" id="stats" aria-label="In numbers">
+    <div class="wrap">
+      <ul>
+        <li data-reveal style="--n:0"><b><span data-count="2">2</span></b><span>hackathon wins in 2026: SmartHack and VibeHack</span></li>
+        <li data-reveal style="--n:1"><b><span data-count="24">24</span><em>/24</em></b><span>findings matched exactly on the SmartHack validation set</span></li>
+        <li data-reveal style="--n:2"><b><span data-count="3102">3,102</span></b><span>automated tests passing in Pandora, our SmartHack project</span></li>
+        <li data-reveal style="--n:3"><b><span data-count="17">17</span><em>k+</em></b><span>lines of Luau in Zombie Swarm, a multiplayer Roblox game</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ featured work ============ -->
+  <section id="work">
+    <div class="wrap">
+      <div class="head">
+        <p class="mono" data-reveal>Featured work</p>
+        <h2 data-reveal style="--n:1">Two hackathons, two wins.</h2>
+        <p data-reveal style="--n:2">Both were built under a deadline with a small team, and both had to hold up in front of a jury.</p>
+      </div>
+
+      <article class="case">
+        <div class="case-text">
+          <p data-reveal><span class="tag">Winner · SmartHack 2026</span></p>
+          <h3 data-reveal style="--n:1">Pandora</h3>
+          <p class="tagline" data-reveal style="--n:2">A home network check anyone can use.</p>
+          <p data-reveal style="--n:3">Built in one hackathon weekend in November 2026 for the R Systems brief “Secure Networks, Simply Explained”. Pandora finds the devices on a home network and the doors each one leaves open, explains every risk in plain Romanian and English, and proves each fix with a re-scan.</p>
+          <ul class="points" data-reveal style="--n:4">
+            <li><b>Rules decide, not AI.</b> I co-owned the scanner and rules engine. The same scan always gives the same findings and score.</li>
+            <li><b>Exact on the test data.</b> 24 of 24 findings and 8 of 8 scores matched the organisers' validation set, checked in CI on every pull request.</li>
+            <li><b>No fake fixes.</b> I built the before and after comparison, the cleaning of untrusted text sent by devices, and the CI pipeline for Linux and Windows.</li>
+          </ul>
+          <ul class="chips" data-reveal style="--n:5" aria-label="Built with">
+            <li>Python</li><li>FastAPI</li><li>nmap</li><li>React</li><li>TypeScript</li><li>Azure</li><li>ESP32</li>
+          </ul>
+        </div>
+        <div>
+          <div class="frame" data-reveal data-tilt>
+            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">pandora · dashboard</span></div>
+            <div class="screens" id="screens">
+              <img class="on" src="assets/img/pandora-home.webp" width="1600" height="900" alt="Pandora overview: a safety score of 45 out of 100, a 'Fix this first' card and a 3D model of the home with numbered devices" data-caption="The dashboard opens on one card: what to fix first.">
+              <img src="assets/img/pandora-plan.webp" width="1600" height="900" loading="lazy" alt="Pandora house plan builder with rooms on a grid and a live 3D preview" data-caption="Rooms snap together like bricks, then each device is dragged into its room.">
+              <img src="assets/img/pandora-history.webp" width="1600" height="900" loading="lazy" alt="Pandora logbook with a chart of the score over time" data-caption="The logbook: every scan and every closed door, in order.">
+              <img src="assets/img/pandora-report.webp" width="1600" height="900" loading="lazy" alt="Pandora one-page safety report comparing the score before and after" data-caption="A one-page before and after report, ready to print.">
+              <img src="assets/img/pandora-standard.webp" width="1600" height="900" loading="lazy" alt="Pandora standard results page listing findings per scan file" data-caption="The exact rows the organisers' test set expects, straight from the rules engine.">
+              <img src="assets/img/pandora-landing.webp" width="1600" height="900" loading="lazy" alt="Pandora landing page: 'See what is open in your network. And close it.'" data-caption="The product page.">
+              <button type="button" aria-label="Open this screenshot larger" data-zoom></button>
+            </div>
+          </div>
+          <div class="tabs auto" role="tablist" aria-label="Pandora screens" data-reveal>
+            <button role="tab" aria-selected="true" type="button">Overview</button>
+            <button role="tab" aria-selected="false" type="button">House plan</button>
+            <button role="tab" aria-selected="false" type="button">Logbook</button>
+            <button role="tab" aria-selected="false" type="button">Report</button>
+            <button role="tab" aria-selected="false" type="button">Results</button>
+            <button role="tab" aria-selected="false" type="button">Landing</button>
+          </div>
+          <p class="caption" id="screen-caption" aria-live="polite">The dashboard opens on one card: what to fix first.</p>
+          <div class="duo">
+            <figure data-reveal>
+              <img src="assets/img/pandora-box.webp" width="1000" height="1333" loading="lazy" alt="ESP32 prototype on a breadboard with a lit green LED and a small LCD">
+              <figcaption>The ESP32 box prototype: it shows the score as a light and watches the Wi-Fi between scans.</figcaption>
+              <button type="button" aria-label="Open the photo of the ESP32 box larger" data-lightbox="assets/img/pandora-box.webp" data-caption="The ESP32 box prototype from SmartHack 2026."></button>
+            </figure>
+            <figure data-reveal style="--n:1">
+              <img src="assets/img/pandora-mockup.webp" width="1600" height="900" loading="lazy" alt="Early Pandora mockup with an isometric house and a 'fix this first' card">
+              <figcaption>The first mockup, from the night the idea took shape.</figcaption>
+              <button type="button" aria-label="Open the early mockup larger" data-lightbox="assets/img/pandora-mockup.webp" data-caption="The first Pandora mockup."></button>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="case flip">
+        <div class="case-text">
+          <p data-reveal><span class="tag">1st place · VibeHack 2026</span></p>
+          <h3 data-reveal style="--n:1">Company ranking engine</h3>
+          <p class="tagline" data-reveal style="--n:2">Finds the best-fit companies for a plain-language query.</p>
+          <p data-reveal style="--n:3">My entry for the Veridion Challenge. It matches complex queries against a company database and ranks the best fits by industry, business model and location, while keeping the expensive LLM calls for the companies that could actually match.</p>
+          <ul class="chips" data-reveal style="--n:4" aria-label="Built with">
+            <li>Python</li><li>sentence-transformers</li><li>LLM</li><li>Embeddings</li>
+          </ul>
+          <p data-reveal style="--n:5"><a class="btn small" href="https://github.com/X3Raz0R/Verid" target="_blank" rel="noopener">Code on GitHub
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a></p>
+        </div>
+        <div>
+          <div class="pipe" data-reveal>
+            <svg viewBox="0 0 1200 330" role="img" aria-label="Pipeline: a query goes through structured filters, then an LLM check weighted 60 percent and embedding similarity weighted 40 percent, then score fusion produces a ranked list.">
+              <path class="rail" d="M70 165H300C430 165 420 92 560 92H640C780 92 770 165 900 165H1130"/>
+              <path class="rail" d="M70 165H300C430 165 420 238 560 238H640C780 238 770 165 900 165H1130"/>
+              <circle r="8" fill="#f2b54a"><animateMotion dur="5s" repeatCount="indefinite" path="M70 165H300C430 165 420 92 560 92H640C780 92 770 165 900 165H1130" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/></circle>
+              <circle r="8" fill="#f2b54a"><animateMotion dur="5s" repeatCount="indefinite" path="M70 165H300C430 165 420 238 560 238H640C780 238 770 165 900 165H1130" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/></circle>
+              <circle class="node" cx="70" cy="165" r="10"/><circle class="node" cx="300" cy="165" r="10"/><circle class="node" cx="600" cy="92" r="10"/><circle class="node" cx="600" cy="238" r="10"/><circle class="node" cx="900" cy="165" r="10"/><circle cx="1130" cy="165" r="14" fill="#f2b54a"/>
+              <text x="78" y="226">query</text><text x="300" y="226">filters</text>
+              <text x="600" y="60">LLM check</text><text class="n" x="600" y="138">60%</text>
+              <text x="600" y="298">embeddings</text><text class="n" x="600" y="204">40%</text>
+              <text x="900" y="226">fusion</text><text class="end" x="1122" y="226">ranked</text>
+            </svg>
+          </div>
+          <ol class="stages">
+            <li data-reveal><b>Parse the query</b><span>Pulls structured constraints out of free text, such as a country or an industry, and turns them into filters.</span></li>
+            <li data-reveal style="--n:1"><b>Check with an LLM</b><span>Asks true or false per company. A circuit breaker falls back to keyword matching after three failures.</span></li>
+            <li data-reveal style="--n:2"><b>Rank by meaning</b><span>Embeds the query and each description with all-MiniLM-L6-v2 and compares them by cosine similarity.</span></li>
+            <li data-reveal style="--n:3"><b>Fuse the scores</b><span>60% constraint match plus 40% semantic similarity, with a confidence score based on how complete the data is.</span></li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ more projects ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="head">
+        <p class="mono" data-reveal>More projects</p>
+        <h2 data-reveal style="--n:1">Things I built because I wanted them to exist.</h2>
+      </div>
+      <div class="grid">
+
+        <article class="card wide" data-reveal data-spot>
+          <div class="viz">
+            <div class="log" aria-hidden="true">
+              <p style="--k:0"><b>ticket</b>“Can't sign in after the update”</p>
+              <p style="--k:1">→ search_similar_tickets<i>2 possible duplicates</i></p>
+              <p style="--k:2">→ classify_ticket<i>Access · High</i></p>
+              <p style="--k:3">→ draft_reply<i>ready for review</i></p>
+              <p style="--k:4" class="ok">✓ every step saved to the audit trail</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="mono">Full-stack · AI agent</p>
+            <h3>Agentic ticket triage</h3>
+            <p>A support desk where an AI agent does the triage. Through a tool-use loop it searches for duplicates, classifies the ticket and drafts a reply, and every action lands in an audit trail. Layered ASP.NET Core API, React front end, SQL Server.</p>
+            <ul class="chips" aria-label="Built with"><li>C#</li><li>ASP.NET Core</li><li>EF Core</li><li>SQL Server</li><li>React</li><li>TypeScript</li><li>Claude API</li></ul>
+          </div>
+        </article>
+
+        <article class="card wide" data-reveal style="--n:1" data-spot>
+          <div class="viz">
+            <div class="shorts-wrap" aria-hidden="true">
+              <div class="short">
+                <p class="cap"><span style="--k:0">why</span> <span style="--k:1">octopuses</span> <span style="--k:2">have</span> <span style="--k:3">three</span> <span style="--k:4">hearts</span></p>
+                <img src="assets/img/shorts-idle.png" width="320" height="320" alt="">
+                <img class="talk" src="assets/img/shorts-talk.png" width="320" height="320" alt="">
+              </div>
+              <ol class="steps">
+                <li style="--k:0">script + fact-check</li>
+                <li style="--k:1">local AI voice</li>
+                <li style="--k:2">word timings</li>
+                <li style="--k:3">talking mascot</li>
+                <li style="--k:4">ffmpeg compose</li>
+                <li style="--k:5">upload</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="mono">Automation · Media</p>
+            <h3>Shorts bot</h3>
+            <p>Makes YouTube Shorts end to end: an AI-written, fact-checked script, a local AI voice, word-by-word captions and a talking mascot, composed with ffmpeg and controlled from Discord. About one minute per video on a laptop CPU.</p>
+            <ul class="chips" aria-label="Built with"><li>Python</li><li>ffmpeg</li><li>Kokoro TTS</li><li>faster-whisper</li><li>Discord bot</li><li>YouTube API</li></ul>
+          </div>
+        </article>
+
+        <article class="card" data-reveal data-spot>
+          <div class="viz">
+            <div class="hud" aria-hidden="true">
+              <header><span>ROUND 3</span><span>infection spreading</span></header>
+              <div class="bar time"><i></i></div>
+              <div class="row"><span>humans</span><div class="bar h"><i></i></div></div>
+              <div class="row"><span>zombies</span><div class="bar z"><i></i></div></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="mono">Game · In development</p>
+            <h3>Zombie Swarm</h3>
+            <p>A multiplayer Roblox game in the spirit of the CS 1.6 zombie mods. Server-authoritative rounds, six zombie classes with abilities, weapons, an economy and a shop.</p>
+            <ul class="chips" aria-label="Built with"><li>Luau</li><li>Roblox</li><li>Rojo</li></ul>
+          </div>
+        </article>
+
+        <article class="card" data-reveal style="--n:1" data-spot>
+          <div class="viz">
+            <div class="rings" aria-hidden="true">
+              <figure><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30"/><circle cx="40" cy="40" r="30" style="--to:42"/></svg>protein</figure>
+              <figure><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30"/><circle cx="40" cy="40" r="30" style="--to:84;animation-delay:.2s"/></svg>carbs</figure>
+              <figure><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30"/><circle cx="40" cy="40" r="30" style="--to:120;animation-delay:.4s"/></svg>fat</figure>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="mono">Mobile · In testing on Google Play</p>
+            <h3>Macro tracker</h3>
+            <p>A calorie and macro tracking app with personal dashboards that update in real time and food data pulled from external nutrition APIs.</p>
+            <ul class="chips" aria-label="Built with"><li>React</li><li>Supabase</li><li>PostgreSQL</li></ul>
+          </div>
+        </article>
+
+        <article class="card" data-reveal style="--n:2" data-spot>
+          <div class="viz">
+            <ul class="sets" aria-hidden="true">
+              <li><b>Bench press</b><span>4 × 8</span><i style="--k:0"></i></li>
+              <li><b>Pull-ups</b><span>3 × 10</span><i style="--k:1"></i></li>
+              <li><b>Squat</b><span>5 × 5</span><i style="--k:2"></i></li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <p class="mono">Mobile · Prototype</p>
+            <h3>Train logger</h3>
+            <p>A workout log with a friends feed: log sets as you train and see what your friends lifted. An early prototype built to learn Expo Router.</p>
+            <ul class="chips" aria-label="Built with"><li>React Native</li><li>Expo</li><li>TypeScript</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ gallery ============ -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="head">
+        <p class="mono" data-reveal>Gallery</p>
+        <h2 data-reveal style="--n:1">Photos and screens.</h2>
+        <p data-reveal style="--n:2">Click any image to open it.</p>
+      </div>
+      <div class="gallery" id="gallery-items">
+        <figure class="tall" data-reveal>
+          <img src="assets/img/trophy.jpg" width="480" height="853" loading="lazy" alt="Lit acrylic trophy engraved 'Veridion Challenge' on a wooden table">
+          <figcaption>The Veridion Challenge trophy, VibeHack 2026.</figcaption>
+          <button type="button" aria-label="Open the trophy photo larger" data-lightbox="assets/img/trophy.jpg" data-caption="The Veridion Challenge trophy, VibeHack 2026."></button>
+        </figure>
+        <figure data-reveal style="--n:1">
+          <img src="assets/img/pandora-home.webp" width="1600" height="900" loading="lazy" alt="Pandora overview with the 3D home">
+          <figcaption>Pandora: the 3D home, with one numbered dot per device.</figcaption>
+          <button type="button" aria-label="Open the Pandora overview larger" data-lightbox="assets/img/pandora-home.webp" data-caption="Pandora: the 3D home, with one numbered dot per device."></button>
+        </figure>
+        <figure class="tall" data-reveal style="--n:2">
+          <img src="assets/img/pandora-box.webp" width="1000" height="1333" loading="lazy" alt="ESP32 prototype on a breadboard with a lit green LED and a small LCD">
+          <figcaption>The ESP32 box on the table at SmartHack 2026.</figcaption>
+          <button type="button" aria-label="Open the ESP32 box photo larger" data-lightbox="assets/img/pandora-box.webp" data-caption="The ESP32 box on the table at SmartHack 2026."></button>
+        </figure>
+        <figure data-reveal>
+          <img src="assets/img/pandora-architecture.webp" width="1400" height="1550" loading="lazy" alt="Pandora architecture diagram: web page, main backend, and two client networks with PCs and boxes">
+          <figcaption>Pandora architecture: one backend, many home networks.</figcaption>
+          <button type="button" aria-label="Open the architecture diagram larger" data-lightbox="assets/img/pandora-architecture.webp" data-caption="Pandora architecture: one backend, many home networks."></button>
+        </figure>
+        <figure data-reveal style="--n:1">
+          <img src="assets/img/pandora-plan.webp" width="1600" height="900" loading="lazy" alt="Pandora house plan builder">
+          <figcaption>Building the home plan, room by room.</figcaption>
+          <button type="button" aria-label="Open the house plan screenshot larger" data-lightbox="assets/img/pandora-plan.webp" data-caption="Building the home plan, room by room."></button>
+        </figure>
+        <figure data-reveal style="--n:2">
+          <div class="pad"><img src="assets/img/shorts-idle.png" width="320" height="320" loading="lazy" alt="Yellow square mascot with a calm smile" style="width:60%;margin-inline:auto"></div>
+          <figcaption>The Shorts bot mascot. Its mouth flaps in time with the voice.</figcaption>
+          <button type="button" aria-label="Open the mascot larger" data-lightbox="assets/img/shorts-idle.png" data-caption="The Shorts bot mascot."></button>
+        </figure>
+        <figure data-reveal>
+          <img src="assets/img/pandora-mockup.webp" width="1600" height="900" loading="lazy" alt="Early Pandora mockup">
+          <figcaption>The first Pandora mockup.</figcaption>
+          <button type="button" aria-label="Open the early mockup larger" data-lightbox="assets/img/pandora-mockup.webp" data-caption="The first Pandora mockup."></button>
+        </figure>
+        <figure data-reveal style="--n:1">
+          <img src="assets/img/pandora-report.webp" width="1600" height="900" loading="lazy" alt="Pandora safety report">
+          <figcaption>The before and after safety report.</figcaption>
+          <button type="button" aria-label="Open the report screenshot larger" data-lightbox="assets/img/pandora-report.webp" data-caption="The before and after safety report."></button>
+        </figure>
+        <figure data-reveal style="--n:2">
+          <img src="assets/img/pandora-landing.webp" width="1600" height="900" loading="lazy" alt="Pandora landing page">
+          <figcaption>“See what is open in your network. And close it.”</figcaption>
+          <button type="button" aria-label="Open the landing page screenshot larger" data-lightbox="assets/img/pandora-landing.webp" data-caption="The Pandora landing page."></button>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ experience ============ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="head">
+        <p class="mono" data-reveal>Experience</p>
+        <h2 data-reveal style="--n:1">Where I have worked and studied.</h2>
+      </div>
+      <ol class="timeline" id="timeline">
+        <li data-reveal>
+          <p class="when mono">Nov 2025 to now</p>
+          <div>
+            <h3>Frontend developer</h3>
+            <p class="org">Sindicatul Studenților din Cibernetică (SISC)</p>
+            <p>Build and maintain React UI components for internal SISC projects, using reusable component patterns.</p>
+            <p>Plan features end to end with a small team and fix implementation issues before release.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <p class="when mono">Mar to Apr 2026</p>
+          <div>
+            <h3>Data automation practicum</h3>
+            <p class="org">Procter &amp; Gamble Academic Program</p>
+            <p>Wrote Python and SQL scripts to clean, transform and aggregate operational datasets, cutting manual reporting time.</p>
+            <p>Made operational reports more consistent and reliable through better querying and transformation.</p>
+          </div>
+        </li>
+        <li data-reveal>
+          <p class="when mono">2024 to 2027</p>
+          <div>
+            <h3>B.Sc. Economic Informatics</h3>
+            <p class="org">Bucharest University of Economic Studies (ASE)</p>
+            <p>Faculty of Cybernetics, Statistics and Economic Informatics.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ about ============ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="head">
+        <p class="mono" data-reveal>About</p>
+        <h2 data-reveal style="--n:1">What I work with.</h2>
+      </div>
+      <dl class="about">
+        <div data-reveal><dt>Specialties</dt><dd>Hybrid search (structured filters plus embedding similarity), LLM integration and cost control, ETL and data cleaning, real-time apps with Supabase and PostgreSQL.</dd></div>
+        <div data-reveal style="--n:1"><dt>Languages</dt><dd>Python, SQL, JavaScript, C#, Java, C++, Bash.</dd></div>
+        <div data-reveal style="--n:2"><dt>Tools</dt><dd>React, Node.js, Supabase, REST APIs, relational databases, Docker, Linux, Git and GitHub.</dd></div>
+        <div data-reveal><dt>Education</dt><dd><b>B.Sc. Economic Informatics</b>, ASE Bucharest, 2024 to 2027.</dd><dd>Dante Alighieri High School.</dd></div>
+        <div data-reveal style="--n:1"><dt>Certificates</dt><dd>Database Design and Programming with SQL (Oracle Academy).</dd><dd>ECDL.</dd></div>
+        <div data-reveal style="--n:2"><dt>Spoken languages</dt><dd>Romanian (native), English (advanced).</dd><dd>Algorithm practice lives in <a href="https://github.com/X3Raz0R/neetcode-submissions" target="_blank" rel="noopener">neetcode-submissions</a>.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ contact ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 data-reveal>Have an internship or a project in mind?</h2>
+      <a class="email" data-reveal style="--n:1" href="mailto:antoniozzr123@gmail.com">antoniozzr123@gmail.com</a>
+      <div class="cta" data-reveal style="--n:2">
+        <a class="btn solid" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn" href="https://www.linkedin.com/in/antonio-andrei-medeleanu-023a5432b" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/X3Raz0R" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="tel:+40732922831">+40 732 922 831</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Antonio Medeleanu · Bucharest</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lb">
+    <header><span class="mono" id="lb-count"></span><button type="button" id="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+    <div class="lb-stage">
+      <img id="lb-img" alt="">
+      <button type="button" class="prev" id="lb-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" class="next" id="lb-next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <p id="lb-caption"></p>
+  </div>
+</dialog>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
